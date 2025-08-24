@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>P–5000 Powered Work Loader</name>
+  	<author>AobaKuma</author>
+    <supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Aoba.Exosuit.PowerLoader</packageId>
+	<loadAfter>
+		<li>aoba.exosuit.framework</li>
+		<li>aoba.deadmanswitch.mobiledragoon</li>
+		<li>ceteam.combatextended</li>
+	</loadAfter>
+    <modDependencies>
+        <li>
+			<packageId>aoba.exosuit.framework</packageId>
+			<displayName>Exosuit Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3352894993</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<description>The P–5000 Powered Work Loader, commonly referred to as the Power Loader, was a commercial mechanized exoskeleton manufactured by Caterpillar, and was used for lifting heavy materials and objects. As well as widespread industrial use, the P–5000 was heavily employed by the United States Colonial Marine Corps to load ordnance on board their starships. Power Loaders were equipped with hydraulic "claws" that can be used to hold and manipulate a variety of objects. __Xenopedia Wiki</description>
+</ModMetaData>

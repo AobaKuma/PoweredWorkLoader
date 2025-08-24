@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>The Dead Man's Switch</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+        <xpath>Defs/Fortified.HeavyEquippableDef[
+            defName="BulkyAutomatroid" or
+            defName="StandardAutomatroid" or
+            defName="LightAutomatroid"
+            ]/EquippableWithApparel</xpath>
+        <value>
+            <li>PWL_Apparel_Core</li>
+        </value>
+    </match>
+  </Operation>
+</Patch>

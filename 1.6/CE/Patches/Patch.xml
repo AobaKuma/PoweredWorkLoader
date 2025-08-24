@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PWL_Apparel_Core"]/statBases</xpath>
+        <value>
+          <Bulk>300</Bulk>
+          <WornBulk>0</WornBulk>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PWL_Apparel_Core"]/equippedStatOffsets</xpath>
+        <value>
+          <CarryBulk>325</CarryBulk>
+          <Suppressability>-0.25</Suppressability>
+          <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PWL_Apparel_Core"]/statBases/ArmorRating_Sharp</xpath>
+        <value>
+          <ArmorRating_Sharp>8</ArmorRating_Sharp>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PWL_Apparel_Core"]/statBases/ArmorRating_Blunt</xpath>
+        <value>
+          <ArmorRating_Blunt>16</ArmorRating_Blunt>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PWL_Apparel_Core"]/statBases/ArmorRating_Heat</xpath>
+        <value>
+          <ArmorRating_Heat>0.30</ArmorRating_Heat>
+        </value>
+      </li>
+
+      <!--=====Patch tools=====-->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PWL_Module_Claw"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>point</label>
+              <capacities>
+                <li>Stab</li>
+              </capacities>
+              <power>40</power>
+              <cooldownTime>1.44</cooldownTime>
+              <armorPenetrationBlunt>12.425</armorPenetrationBlunt>
+              <armorPenetrationSharp>5.48</armorPenetrationSharp>
+              <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>claw</label>
+              <capacities>
+                <li>Cut</li>
+              </capacities>
+              <power>38</power>
+              <cooldownTime>1.34</cooldownTime>
+              <chanceFactor>1.33</chanceFactor>
+              <armorPenetrationBlunt>18.956</armorPenetrationBlunt>
+              <armorPenetrationSharp>5.43</armorPenetrationSharp>
+              <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+
+      <!--=====Patch tools=====-->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PWL_Weapon_Drill"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>point</label>
+              <capacities>
+                <li>Stab</li>
+              </capacities>
+              <power>20</power>
+              <cooldownTime>2.44</cooldownTime>
+              <armorPenetrationBlunt>20.425</armorPenetrationBlunt>
+              <armorPenetrationSharp>10.48</armorPenetrationSharp>
+              <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+              <label>head</label>
+              <capacities>
+                <li>Demolish</li>
+              </capacities>
+              <power>38</power>
+              <cooldownTime>2.34</cooldownTime>
+              <chanceFactor>1.33</chanceFactor>
+              <armorPenetrationBlunt>100.956</armorPenetrationBlunt>
+              <armorPenetrationSharp>30.43</armorPenetrationSharp>
+              <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+
+      <!--=====Patch tools=====-->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PWL_Weapon_Welder"]/tools</xpath>
+        <value>
+          <tools>
+            <li Class="CombatExtended.ToolCE">
+              <label>point</label>
+              <capacities>
+                <li>Stab</li>
+              </capacities>
+              <power>20</power>
+              <cooldownTime>0.5</cooldownTime>
+              <armorPenetrationBlunt>20.425</armorPenetrationBlunt>
+              <armorPenetrationSharp>10.48</armorPenetrationSharp>
+              <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+          </tools>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

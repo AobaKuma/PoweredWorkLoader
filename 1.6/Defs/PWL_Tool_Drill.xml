@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="PWL_ModuleBase">
+    <defName>PWL_Module_Drill</defName>
+    <label>powered impact drill</label>
+    <description>An impact drill used by a heavy-duty exoskeleton, commonly in use by mining projects during colonial activities.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PWL_Apparel_Drill</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/PWL_Weapons/tool_drill</texPath>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Mass>20.50</Mass>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisites>
+        <li>WG_HeavyExoskeleton</li>
+      </researchPrerequisites>
+      <effectWorking>Repair</effectWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <workAmount>45000</workAmount>
+      <soundWorking>Recipe_Machining</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <EquipedThingDef>PWL_Apparel_Drill</EquipedThingDef>
+        <occupiedSlots>
+          <li>ArmRight</li>
+        </occupiedSlots>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ModuleApparelBase">
+    <defName>PWL_Apparel_Drill</defName>
+    <label>powered impact drill</label>
+    <description>An impact drill used by a heavy-duty exoskeleton, commonly in use by mining projects during colonial activities.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PWL_Module_Drill</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/PWL_Weapons/tool_drill</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>20.50</Mass>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <layers>
+        <li>ExosuitLayer_Core</li>
+      </layers>
+      <parentTagDef>WGApparelBody</parentTagDef>
+      <renderNodeProperties>
+        <li Class="Exosuit.PawnRenderNodeProperties_ApparelWeaponHolder">
+          <parentTagDef>WGApparelBody</parentTagDef>
+          <drawData>
+            <scale>1</scale>
+            <dataSouth>
+              <offset>(-0.65,0,-0.55)</offset>
+              <layer>25</layer>
+              <rotationOffset>97</rotationOffset>
+            </dataSouth>
+            <dataNorth>
+              <offset>(0.70,0,-0.5)</offset>
+              <layer>0</layer>
+              <rotationOffset>81</rotationOffset>
+            </dataNorth>
+            <dataWest>
+              <offset>(-0.5,0,-0.4)</offset>
+              <layer>-10</layer>
+              <rotationOffset>0</rotationOffset>
+            </dataWest>
+            <dataEast>
+              <offset>(0.55,0,-0.65)</offset>
+              <layer>71</layer>
+              <rotationOffset>0</rotationOffset>
+            </dataEast>
+          </drawData>
+        </li>
+      </renderNodeProperties>
+    </apparel>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <ItemDef>PWL_Module_Drill</ItemDef>
+        <occupiedSlots>
+          <li>ArmRight</li>
+        </occupiedSlots>
+      </li>
+      <li Class="Exosuit.CompProperties_ModuleWeapon">
+        <weapon>PWL_Weapon_Drill</weapon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PWL_BaseWalkerWeapon">
+    <defName>PWL_Weapon_Drill</defName>
+    <label>powered impact drill</label>
+    <description>An impact drill used by a heavy-duty exoskeleton, commonly in use by mining projects during colonial activities.</description>
+    <graphicData>
+      <texPath>Things/PWL_Weapons/tool_drill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>0</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <DeepDrillingSpeed>0.4</DeepDrillingSpeed>
+      <MiningSpeed>0.8</MiningSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-35</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <armorPenetration>1</armorPenetration>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Demolish</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2</cooldownTime>
+		    <armorPenetration>2.4</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>	

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <!-- this is the def of module slot, allowing you to make your own customizable frame system with/without sharing slot with other mech frame type, walker gear framework provied a preset slots in contents, but you can make your own too. -->
+  <Exosuit.SlotDef>
+    <defName>PWL_Core</defName>
+    <label>Powered Work Loader</label>
+    <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.</description>
+    <supportedSlots><!-- what slotDef will this core frame support to mount. -->
+      <li>ArmRight</li>
+    </supportedSlots>
+    <uiPriority>0</uiPriority><!-- 1~6 for optional slots --> 
+    <isCoreFrame>true</isCoreFrame>
+  </Exosuit.SlotDef>
+
+  <!-- module, this is how you move / manufact, store and repair a mecha core and mecha part-->
+  <ThingDef ParentName="ModuleItemBase">
+    <defName>PWL_Module_Core</defName>
+    <label>Powered Work Loader(Module)</label>
+    <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PWL_Apparel_Core</ThingDef>
+    </descriptionHyperlinks>
+    <smeltProducts>
+      <Steel>200</Steel>
+      <Uranium>40</Uranium>
+    </smeltProducts>
+    <butcherProducts>
+      <Steel>75</Steel>
+      <Uranium>25</Uranium>
+      <ChunkSlagSteel>6</ChunkSlagSteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </butcherProducts>
+    <costList>
+      <Steel>250</Steel>
+      <Uranium>50</Uranium>
+      <ComponentIndustrial>20</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <graphicData>
+      <texPath>Item/PWL_Module</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>100</Mass> <!-- mass does matters-->
+      <Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <EquipedThingDef>PWL_Apparel_Core</EquipedThingDef>
+        <occupiedSlots>
+          <li>PWL_Core</li>
+        </occupiedSlots>
+      </li>
+    </comps>
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisites>
+        <li>WG_HeavyExoskeleton</li>
+      </researchPrerequisites>
+      <effectWorking>Repair</effectWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <workAmount>60000</workAmount>
+      <soundWorking>Recipe_Machining</soundWorking>
+    </recipeMaker>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <only>(225, 177, 103)</only>
+        </li>
+        <li>
+          <only>(100, 100, 100)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+  <!-- apparel-->
+  <ThingDef ParentName="ModuleApparelCore">
+    <defName>PWL_Apparel_Core</defName>
+    <label>Powered Work Loader</label>
+    <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PWL_Module_Core</ThingDef>
+    </descriptionHyperlinks>    
+    <thingClass>Exosuit.Exosuit_Core</thingClass> <!-- important, only core part need this -->
+    <uiIconPath>Things/PowerLoader/apparel_icon</uiIconPath>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/PowerLoader/apparel_icon</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>100</Mass>
+      <MoveSpeed>3</MoveSpeed>
+      <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+      <Insulation_Cold>20</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+			<CarryingCapacity>500</CarryingCapacity> <!-- frame uses carrying capacity as additional capacity of carrying modules)-->
+      <MedicalTendSpeed>-1</MedicalTendSpeed>
+      <MeleeDodgeChance>-1.5</MeleeDodgeChance>
+			<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <apparel>
+      <renderNodeProperties>
+        <li>
+          <debugLabel>top</debugLabel>
+          <nodeClass>Exosuit.PawnRenderNode_ApparelColor</nodeClass>
+          <parentTagDef>WGApparelBody</parentTagDef>
+          <drawSize>2.25</drawSize>
+          <pawnType>Any</pawnType>
+          <texPath>Things/PowerLoader/apparel_top</texPath>
+          <drawData>
+            <defaultData>
+              <layer>70</layer>
+            </defaultData>
+            <dataEast>
+              <offset>(0,0,-0.2)</offset>
+            </dataEast>
+            <dataWest>
+              <offset>(0,0,-0.2)</offset>
+            </dataWest>
+            <dataNorth>
+              <offset>(0,0,-0.2)</offset>
+            </dataNorth>
+            <dataSouth>
+              <offset>(0,0,-0.2)</offset>
+            </dataSouth>
+          </drawData>
+        </li>
+        <li>
+          <debugLabel>bottom</debugLabel>
+          <nodeClass>Exosuit.PawnRenderNode_ApparelColor</nodeClass>
+          <parentTagDef>WGApparelBody</parentTagDef>
+          <drawSize>2.25</drawSize>
+          <pawnType>Any</pawnType>
+          <texPath>Things/PowerLoader/apparel_bottom</texPath>
+          <drawData>
+            <defaultData>
+              <layer>-1</layer>
+            </defaultData>
+            <dataEast>
+              <offset>(0,0,-0.2)</offset>
+            </dataEast>
+            <dataWest>
+              <offset>(0,0,-0.2)</offset>
+            </dataWest>
+            <dataNorth>
+              <offset>(0,0,-0.2)</offset>
+            </dataNorth>
+            <dataSouth>
+              <offset>(0,0,-0.2)</offset>
+            </dataSouth>
+          </drawData>
+        </li>
+      </renderNodeProperties>
+      <layers Inherit="false">
+        <li>ExosuitLayer_Core</li>
+      </layers>
+      <renderSkipFlags Inherit="false"/>
+    </apparel>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <ItemDef>PWL_Module_Core</ItemDef>
+        <occupiedSlots>
+          <li>PWL_Core</li>
+        </occupiedSlots>
+      </li>
+    </comps>
+    <modExtensions>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+        <pawnCapacityMinLevels>
+          <li>
+            <capacity>Moving</capacity>
+            <minLevel>0.8</minLevel>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <minLevel>0.8</minLevel>
+          </li>
+        </pawnCapacityMinLevels>
+      </li>
+      <li Class="Exosuit.ExosuitExt">
+        <minArmorBreakdownThreshold>0.9</minArmorBreakdownThreshold>
+        <bayRenderOffset>(0,0,-0.3)</bayRenderOffset>
+      </li>
+      <li Class="Exosuit.ApparelRenderOffsets">
+        <rootData>
+          <defaultData>
+            <offset>(0,0,0.3)</offset>
+          </defaultData>
+        </rootData>
+        <equipmentOffsetData>
+          <dataEast>
+            <offset>(0.3,0,0)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.3,-1,0.4)</offset>
+          </dataWest>
+          <dataNorth>
+            <offset>(0,0,0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.4,0,0.2)</offset>
+          </dataSouth>
+        </equipmentOffsetData>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>	

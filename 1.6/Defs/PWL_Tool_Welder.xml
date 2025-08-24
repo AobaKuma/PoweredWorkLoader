@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="PWL_ModuleBase">
+    <defName>PWL_Module_Welder</defName>
+    <label>electric welder</label>
+    <description>A large welding tool used in construction, typically by heavy engineering exoskeletons. It must be used with caution due to the powerful arc of energy it emits.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PWL_Apparel_Welder</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/PWL_Weapons/tool_welder</texPath>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Mass>12.50</Mass>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisites>
+        <li>WG_HeavyExoskeleton</li>
+      </researchPrerequisites>
+      <effectWorking>Repair</effectWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <workAmount>45000</workAmount>
+      <soundWorking>Recipe_Machining</soundWorking>
+    </recipeMaker>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <EquipedThingDef>PWL_Apparel_Welder</EquipedThingDef>
+        <occupiedSlots>
+          <li>ArmRight</li>
+        </occupiedSlots>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="ModuleApparelBase">
+    <defName>PWL_Apparel_Welder</defName>
+    <label>electric welder</label>
+    <description>A large welding tool used in construction, typically by heavy engineering exoskeletons. It must be used with caution due to the powerful arc of energy it emits.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PWL_Module_Welder</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/PWL_Weapons/tool_welder</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>12.50</Mass>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <layers>
+        <li>ExosuitLayer_Core</li>
+      </layers>
+      <parentTagDef>WGApparelBody</parentTagDef>
+      <renderNodeProperties>
+        <li Class="Exosuit.PawnRenderNodeProperties_ApparelWeaponHolder">
+          <parentTagDef>WGApparelBody</parentTagDef>
+          <drawData>
+            <scale>1</scale>
+            <dataSouth>
+              <offset>(-0.65,0,-0.55)</offset>
+              <layer>25</layer>
+              <rotationOffset>97</rotationOffset>
+            </dataSouth>
+            <dataNorth>
+              <offset>(0.70,0,-0.5)</offset>
+              <layer>0</layer>
+              <rotationOffset>81</rotationOffset>
+            </dataNorth>
+            <dataWest>
+              <offset>(-0.5,0,-0.4)</offset>
+              <layer>-10</layer>
+              <rotationOffset>0</rotationOffset>
+            </dataWest>
+            <dataEast>
+              <offset>(0.55,0,-0.65)</offset>
+              <layer>71</layer>
+              <rotationOffset>0</rotationOffset>
+            </dataEast>
+          </drawData>
+        </li>
+      </renderNodeProperties>
+    </apparel>
+    <comps>
+      <li Class="Exosuit.CompProperties_ExosuitModule">
+        <ItemDef>PWL_Module_Welder</ItemDef>
+        <occupiedSlots>
+          <li>ArmRight</li>
+        </occupiedSlots>
+      </li>
+      <li Class="Exosuit.CompProperties_ModuleWeapon">
+        <weapon>PWL_Weapon_Welder</weapon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="PWL_BaseWalkerWeapon">
+    <defName>PWL_Weapon_Welder</defName>
+    <label>electric welder</label>
+    <description>A large welding tool used in construction, typically by heavy engineering exoskeletons. It must be used with caution due to the powerful arc of energy it emits.</description>
+    <graphicData>
+      <texPath>Things/PWL_Weapons/tool_welder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>0</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <ConstructionSpeed>0.75</ConstructionSpeed>
+      <ConstructSuccessChance>0.15</ConstructSuccessChance>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-35</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>40</power>
+        <armorPenetration>1</armorPenetration>
+        <cooldownTime>1.3</cooldownTime>
+      </li>
+      <li>
+        <label>eletric arc</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>0.5</cooldownTime>
+		    <armorPenetration>0.8</armorPenetration>
+        <extraMeleeDamages>
+        <li>
+          <def>Burn</def>
+          <amount>30</amount>
+          <chance>1</chance>
+        </li>
+      </extraMeleeDamages>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>	
