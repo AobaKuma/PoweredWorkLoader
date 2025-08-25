@@ -120,7 +120,7 @@
           <texPath>Things/PowerLoader/apparel_top</texPath>
           <drawData>
             <defaultData>
-              <layer>70</layer>
+              <layer>75</layer>
             </defaultData>
             <dataEast>
               <offset>(0,0,-0.2)</offset>
