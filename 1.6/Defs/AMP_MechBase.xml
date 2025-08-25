@@ -6,7 +6,7 @@
   <Exosuit.SlotDef>
     <defName>PWL_Core</defName>
     <label>Powered Work Loader</label>
-    <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.</description>
+    <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.\n\nNote that this type of exoskeleton provides only minimal crash protection, so even minor structural damage may result in pilot injury.</description>
     <supportedSlots><!-- what slotDef will this core frame support to mount. -->
       <li>ArmRight</li>
     </supportedSlots>
@@ -18,7 +18,7 @@
   <ThingDef ParentName="ModuleItemBase">
     <defName>PWL_Module_Core</defName>
     <label>Powered Work Loader(Module)</label>
-    <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.</description>
+    <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.\n\nNote that this type of exoskeleton provides only minimal crash protection, so even minor structural damage may result in pilot injury.</description>
     <descriptionHyperlinks>
       <ThingDef>PWL_Apparel_Core</ThingDef>
     </descriptionHyperlinks>
@@ -82,7 +82,7 @@
   <ThingDef ParentName="ModuleApparelCore">
     <defName>PWL_Apparel_Core</defName>
     <label>Powered Work Loader</label>
-    <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.</description>
+    <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.\n\nNote that this type of exoskeleton provides only minimal crash protection, so even minor structural damage may result in pilot injury.</description>
     <descriptionHyperlinks>
       <ThingDef>PWL_Module_Core</ThingDef>
     </descriptionHyperlinks>    
@@ -99,6 +99,7 @@
       <MoveSpeed>3</MoveSpeed>
       <ArmorRating_Sharp>0.60</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.1</ArmorRating_Heat>
       <Insulation_Cold>20</Insulation_Cold>
       <Insulation_Heat>10</Insulation_Heat>
     </statBases>

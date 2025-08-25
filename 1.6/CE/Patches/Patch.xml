@@ -38,7 +38,7 @@
 
       <!--=====Patch tools=====-->
       <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="PWL_Module_Claw"]/tools</xpath>
+        <xpath>Defs/ThingDef[defName="PWL_Weapon_Claw"]/tools</xpath>
         <value>
           <tools>
             <li Class="CombatExtended.ToolCE">

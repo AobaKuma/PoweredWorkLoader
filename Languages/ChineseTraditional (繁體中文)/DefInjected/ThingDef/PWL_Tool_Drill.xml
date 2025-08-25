@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: powered impact drill -->
+  <PWL_Apparel_Drill.label>動力衝擊鑽</PWL_Apparel_Drill.label>
+  <!-- EN: An impact drill used by a heavy-duty exoskeleton, commonly in use by mining projects during colonial activities. -->
+  <PWL_Apparel_Drill.description>由外骨骼使用的衝擊鑽，常用於殖民活動期間的採礦計畫。</PWL_Apparel_Drill.description>
+  
+  <!-- EN: powered impact drill -->
+  <PWL_Module_Drill.label>動力衝擊鑽</PWL_Module_Drill.label>
+  <!-- EN: An impact drill used by a heavy-duty exoskeleton, commonly in use by mining projects during colonial activities. -->
+  <PWL_Module_Drill.description>由外骨骼使用的衝擊鑽，常用於殖民活動期間的採礦計畫。</PWL_Module_Drill.description>
+  
+  <!-- EN: powered impact drill -->
+  <PWL_Weapon_Drill.label>動力衝擊鑽</PWL_Weapon_Drill.label>
+  <!-- EN: An impact drill used by a heavy-duty exoskeleton, commonly in use by mining projects during colonial activities. -->
+  <PWL_Weapon_Drill.description>由外骨骼使用的衝擊鑽，常用於殖民活動期間的採礦計畫。</PWL_Weapon_Drill.description>
+  <!-- EN: point -->
+  <PWL_Weapon_Drill.tools.point.label>鑽頭</PWL_Weapon_Drill.tools.point.label>
+  <!-- EN: head -->
+  <PWL_Weapon_Drill.tools.head.label>鑽尖</PWL_Weapon_Drill.tools.head.label>
+  
+</LanguageData>

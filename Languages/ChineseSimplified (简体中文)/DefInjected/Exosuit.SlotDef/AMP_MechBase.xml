@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Powered Work Loader -->
+  <PWL_Core.label>动力装载机</PWL_Core.label>
+  <!-- EN: A commercial mechanized exoskeleton, used for lifting heavy materials and objects.\n\nNote that this type of exoskeleton provides only minimal crash protection, so even minor structural damage may result in pilot injury. -->
+  <PWL_Core.description>一种商业化生产与使用的机械外骨骼，能够在缺乏重型机械或空间狭窄的情况下对大型货物与货柜进行装卸。 \n\n请注意，这种外骨骼仅提供最小的碰撞保护，因此即使是轻微的结构损坏也可能导致驾驶员受伤。</PWL_Core.description>
+  
+</LanguageData>

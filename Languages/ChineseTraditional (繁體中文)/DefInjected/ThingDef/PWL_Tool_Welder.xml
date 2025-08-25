@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: electric welder -->
+  <PWL_Apparel_Welder.label>重型電銲槍</PWL_Apparel_Welder.label>
+  <!-- EN: A large welding tool used in construction, typically by heavy engineering exoskeletons. It must be used with caution due to the powerful arc of energy it emits. -->
+  <PWL_Apparel_Welder.description>一種用於建築的大型焊接工具，通常用於重型工程外骨骼。由於其發射的強大電弧能量，必須謹慎使用。</PWL_Apparel_Welder.description>
+  
+  <!-- EN: electric welder -->
+  <PWL_Module_Welder.label>重型電銲槍</PWL_Module_Welder.label>
+  <!-- EN: A large welding tool used in construction, typically by heavy engineering exoskeletons. It must be used with caution due to the powerful arc of energy it emits. -->
+  <PWL_Module_Welder.description>一種用於建築的大型焊接工具，通常用於重型工程外骨骼。由於其發射的強大電弧能量，必須謹慎使用。</PWL_Module_Welder.description>
+  
+  <!-- EN: electric welder -->
+  <PWL_Weapon_Welder.label>重型電銲槍</PWL_Weapon_Welder.label>
+  <!-- EN: A large welding tool used in construction, typically by heavy engineering exoskeletons. It must be used with caution due to the powerful arc of energy it emits. -->
+  <PWL_Weapon_Welder.description>一種用於建築的大型焊接工具，通常用於重型工程外骨骼。由於其發射的強大電弧能量，必須謹慎使用。</PWL_Weapon_Welder.description>
+  <!-- EN: point -->
+  <PWL_Weapon_Welder.tools.point.label>槍頭</PWL_Weapon_Welder.tools.point.label>
+  
+</LanguageData>

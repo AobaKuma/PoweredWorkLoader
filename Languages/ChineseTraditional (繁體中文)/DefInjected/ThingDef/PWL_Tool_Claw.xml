@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: powered loader claw -->
+  <PWL_Apparel_Claw.label>裝載機液壓爪</PWL_Apparel_Claw.label>
+  <!-- EN: a hydraulic power claw for lifting heavy cargo and payloads. -->
+  <PWL_Apparel_Claw.description>一種用於夾起貨物的液壓爪，其出力極高也能夠輕易地夾斷許多東西。</PWL_Apparel_Claw.description>
+  
+  <!-- EN: powered loader claw -->
+  <PWL_Module_Claw.label>裝載機液壓爪</PWL_Module_Claw.label>
+  <!-- EN: a hydraulic power claw for lifting heavy cargo and payloads. -->
+  <PWL_Module_Claw.description>一種用於夾起貨物的液壓爪，其出力極高也能夠輕易地夾斷許多東西。</PWL_Module_Claw.description>
+  
+  <!-- EN: powered loader claw -->
+  <PWL_Weapon_Claw.label>裝載機液壓爪</PWL_Weapon_Claw.label>
+  <!-- EN: a hydraulic power claw for lifting heavy cargo and payloads. -->
+  <PWL_Weapon_Claw.description>一種用於夾起貨物的液壓爪，其出力極高也能夠輕易地夾斷許多東西。</PWL_Weapon_Claw.description>
+  <!-- EN: point -->
+  <PWL_Weapon_Claw.tools.point.label>爪尖</PWL_Weapon_Claw.tools.point.label>
+  <!-- EN: claw -->
+  <PWL_Weapon_Claw.tools.claw.label>液壓爪</PWL_Weapon_Claw.tools.claw.label>
+  
+</LanguageData>
