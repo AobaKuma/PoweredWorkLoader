@@ -57,6 +57,10 @@
     <statBases>
       <Mass>20.50</Mass>
     </statBases>
+    <equippedStatOffsets>
+      <DeepDrillingSpeed>0.4</DeepDrillingSpeed>
+      <MiningSpeed>0.8</MiningSpeed>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Shoulders</li>
@@ -119,10 +123,6 @@
     <statBases>
       <Mass>0</Mass>
     </statBases>
-    <equippedStatOffsets>
-      <DeepDrillingSpeed>0.4</DeepDrillingSpeed>
-      <MiningSpeed>0.8</MiningSpeed>
-    </equippedStatOffsets>
     <equippedAngleOffset>-35</equippedAngleOffset>
     <tools>
       <li>

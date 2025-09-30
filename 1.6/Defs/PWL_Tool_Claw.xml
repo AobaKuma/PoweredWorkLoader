@@ -57,6 +57,9 @@
     <statBases>
       <Mass>10.50</Mass>
     </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.35</PlantWorkSpeed>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Shoulders</li>
@@ -119,9 +122,6 @@
     <statBases>
       <Mass>0</Mass>
     </statBases>
-    <equippedStatOffsets>
-      <PlantWorkSpeed>0.35</PlantWorkSpeed>
-    </equippedStatOffsets>
     <equippedAngleOffset>-35</equippedAngleOffset>
     <tools>
       <li>
