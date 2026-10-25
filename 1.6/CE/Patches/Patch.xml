@@ -13,6 +13,7 @@
         <xpath>Defs/ThingDef[defName="PWL_Apparel_Core"]/equippedStatOffsets</xpath>
         <value>
           <CarryBulk>325</CarryBulk>
+		  <CarryWeight>500</CarryWeight> <!-- ADD -->
           <Suppressability>-0.25</Suppressability>
           <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
         </value>

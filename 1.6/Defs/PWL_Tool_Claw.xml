@@ -15,6 +15,10 @@
       <MaxHitPoints>50</MaxHitPoints>
       <Mass>10.50</Mass>
     </statBases>
+	<equippedStatOffsets> <!-- ADD -->
+      <ConstructionSpeed>0.25</ConstructionSpeed> <!-- ADD -->
+	  <PlantWorkSpeed>1.1</PlantWorkSpeed> <!-- ADD -->
+	</equippedStatOffsets> <!-- ADD -->
     <recipeMaker>
       <skillRequirements>
         <Crafting>8</Crafting>
@@ -58,8 +62,9 @@
       <Mass>10.50</Mass>
     </statBases>
     <equippedStatOffsets>
-      <PlantWorkSpeed>0.35</PlantWorkSpeed>
-    </equippedStatOffsets>
+      <ConstructionSpeed>0.25</ConstructionSpeed> <!-- ADD -->
+	  <PlantWorkSpeed>1.1</PlantWorkSpeed> <!-- CHANGED -->
+	</equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Shoulders</li>
@@ -122,6 +127,10 @@
     <statBases>
       <Mass>0</Mass>
     </statBases>
+	<equippedStatOffsets> <!-- ADD -->
+      <ConstructionSpeed>0.25</ConstructionSpeed> <!-- ADD -->
+	  <PlantWorkSpeed>1.1</PlantWorkSpeed> <!-- ADD -->
+	</equippedStatOffsets> <!-- ADD -->
     <equippedAngleOffset>-35</equippedAngleOffset>
     <tools>
       <li>

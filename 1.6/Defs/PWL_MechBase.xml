@@ -9,6 +9,7 @@
     <description>A commercial mechanized exoskeleton, used for lifting heavy materials and objects.\n\nNote that this type of exoskeleton provides only minimal crash protection, so even minor structural damage may result in pilot injury.</description>
     <supportedSlots><!-- what slotDef will this core frame support to mount. -->
       <li>ArmRight</li>
+	  <li>Attachment</li> <!-- ADD -->
     </supportedSlots>
     <uiPriority>0</uiPriority><!-- 1~6 for optional slots --> 
     <isCoreFrame>true</isCoreFrame>
@@ -35,7 +36,7 @@
     <costList>
       <Steel>250</Steel>
       <Uranium>50</Uranium>
-      <ComponentIndustrial>20</ComponentIndustrial>
+      <ComponentIndustrial>16</ComponentIndustrial> <!-- CHANGED -->
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <graphicData>
@@ -107,7 +108,7 @@
 			<CarryingCapacity>500</CarryingCapacity> <!-- frame uses carrying capacity as additional capacity of carrying modules)-->
       <MedicalTendSpeed>-1</MedicalTendSpeed>
       <MeleeDodgeChance>-1.5</MeleeDodgeChance>
-			<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+			<WorkSpeedGlobal>1.25</WorkSpeedGlobal> <!-- CHANGED -->
     </equippedStatOffsets>
     <apparel>
       <renderNodeProperties>

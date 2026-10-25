@@ -15,6 +15,10 @@
       <MaxHitPoints>75</MaxHitPoints>
       <Mass>20.50</Mass>
     </statBases>
+	<equippedStatOffsets> <!-- ADD -->
+      <DeepDrillingSpeed>0.4</DeepDrillingSpeed> <!-- ADD -->
+      <MiningSpeed>0.8</MiningSpeed> <!-- ADD -->
+    </equippedStatOffsets> <!-- ADD -->
     <recipeMaker>
       <skillRequirements>
         <Crafting>8</Crafting>
@@ -123,6 +127,10 @@
     <statBases>
       <Mass>0</Mass>
     </statBases>
+	<equippedStatOffsets> <!-- ADD -->
+      <DeepDrillingSpeed>0.4</DeepDrillingSpeed> <!-- ADD -->
+      <MiningSpeed>0.8</MiningSpeed> <!-- ADD -->
+    </equippedStatOffsets> <!-- ADD -->
     <equippedAngleOffset>-35</equippedAngleOffset>
     <tools>
       <li>

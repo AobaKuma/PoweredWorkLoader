@@ -15,6 +15,10 @@
       <MaxHitPoints>75</MaxHitPoints>
       <Mass>12.50</Mass>
     </statBases>
+    <equippedStatOffsets>
+      <ConstructionSpeed>1.5</ConstructionSpeed> <!-- CHANGED -->
+      <ConstructSuccessChance>0.45</ConstructSuccessChance> <!-- CHANGED -->
+    </equippedStatOffsets>
     <recipeMaker>
       <skillRequirements>
         <Crafting>8</Crafting>
@@ -58,10 +62,10 @@
     <statBases>
       <Mass>12.50</Mass>
     </statBases>
-	<equippedStatOffsets>
-      <ConstructionSpeed>0.75</ConstructionSpeed>
-      <ConstructSuccessChance>0.15</ConstructSuccessChance>
-    </equippedStatOffsets>
+	<equippedStatOffsets> <!-- ADD -->
+      <ConstructionSpeed>1.5</ConstructionSpeed> <!-- ADD -->
+      <ConstructSuccessChance>0.45</ConstructSuccessChance> <!-- ADD -->
+    </equippedStatOffsets> <!-- ADD -->
     <apparel>
       <bodyPartGroups>
         <li>Shoulders</li>
@@ -124,6 +128,10 @@
     <statBases>
       <Mass>0</Mass>
     </statBases>
+	<equippedStatOffsets> <!-- ADD -->
+      <ConstructionSpeed>1.5</ConstructionSpeed> <!-- ADD -->
+      <ConstructSuccessChance>0.45</ConstructSuccessChance> <!-- ADD -->
+    </equippedStatOffsets> <!-- ADD -->
     <equippedAngleOffset>-35</equippedAngleOffset>
     <tools>
       <li>
